@@ -1,0 +1,21 @@
+
+.featuredImages {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+/* 
+.photoContainer {
+    width: 100%;
+} */
+
+.mainHomeImage {
+    grid-column: 1 / 3;
+}
+
+.homepagePhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

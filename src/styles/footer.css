@@ -1,0 +1,22 @@
+.footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 50px 100px;
+    background-color: rgb(224, 224, 224);
+}
+
+.footerColumnTitle {
+    font-weight: bold;
+}
+
+.footerLinks ul {
+    padding: 0px;
+}
+
+.footerLinks li {
+    list-style-type: none;
+}
+
+
