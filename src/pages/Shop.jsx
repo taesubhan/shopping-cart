@@ -43,10 +43,10 @@ function ShopPage({category}) {
     }, [category])
 
     return (
-        <div className='shopPageContainer'>
+        <div className='shopPageContainer pageContainer'>
             <Header />
-            {error && <div className='errorPage'>{error} </div>}
-            {loading && <div className='loadingPage'>Loading...</div>}
+            {error && <div className='errorPage contentContainer'>{error} </div>}
+            {loading && <div className='loadingPage contentContainer'>Loading...</div>}
             {products && <ItemCardsGrid products={products} />}
             <Footer />
         </div>

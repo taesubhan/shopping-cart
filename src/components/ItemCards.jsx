@@ -1,3 +1,18 @@
+import { useContext } from 'react';
+import { cartContext } from '../context/Cart';
+
+
+function AddToCartBtn({product}) {
+    const { addToCart } = useContext(cartContext);
+
+    const addProductToCart = () => {
+        addToCart(product);
+    }
+    return (
+        <button className='addToCartBtn defaultButtonStyles' onClick={addProductToCart}>Add To Cart</button>
+    )
+}
+
 function ItemCards({products}) {
     const productItems = products.map((item) => {
         return (
@@ -9,9 +24,11 @@ function ItemCards({products}) {
                     <ul className="itemDescription">
                         <li className='itemTitle'>{item.title}</li>
                         <li className='itemCategory'>{item.category}</li>
-                        <li className='itemPrice'>${item.price}</li>
+                        <li className='itemPrice'>${item.price.toFixed(2)}</li>
                     </ul>
+                    <AddToCartBtn product={item}/> 
                 </div>
+                
             </div>
         )
     })
@@ -24,9 +41,8 @@ function ItemCards({products}) {
 }
 
 export function ItemCardsGrid({products}) {
-    console.log(products);
     return (
-        <div className="shopSection">
+        <div className="shopSection contentContainer">
             <div className="shoppingItemsGrid">
                 <ItemCards products={products} />
             </div>

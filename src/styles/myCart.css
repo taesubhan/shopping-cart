@@ -1,0 +1,97 @@
+
+.MyCartContents {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 100px;
+    gap: 100px;
+}
+
+/* Shopping Cart */
+
+.itemBag {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.shoppingCartTitle {
+    margin: 0px;
+}
+
+.myCartItemList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shoppingCartItem {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.quantityContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.itemQuantityInput {
+    padding: 5px;
+    border-radius: 8px;
+    width: 10%;
+    min-width: 25px;
+    font-weight: bold;
+}
+
+.deleteItemBtn {
+    color: blue;
+    margin: 0px;
+}
+.deleteItemBtn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Summary */
+
+.costSummary {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.costSummaryTitle {
+    margin: 0px;
+}
+
+.myCartCostSummary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.myCartDescriptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summaryLabel {
+    margin: 0px;
+}
+
+.totalCostContainer {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.checkoutBtnContainer {
+    display: flex;
+    font-weight: bold;
+}
+
+.checkOutBtn {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    flex-grow: 1;
+}

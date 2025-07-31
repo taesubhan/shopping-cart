@@ -1,0 +1,13 @@
+.defaultButtonStyles {
+    background-color: var(--btn-base-color);
+    color: white;
+}
+
+.defaultButtonStyles:hover {
+    background-color: var(--btn-hover-color);
+    cursor: pointer;
+}
+
+.defaultButtonStyles:active {
+    background-color: var(--btn-click-color);
+}

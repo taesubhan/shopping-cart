@@ -1,29 +1,25 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { HomePage } from './pages/Home';
-import { ShopPageWrapper } from './pages/ShopPageWrapper';
+import routes from './pages/routes';
+import { CartContextProvider } from './context/Cart';
+import './styles/variables.css';
+import './styles/pageRouting.css';
+import './styles/buttons.css';
 import './styles/index.css';
 import './styles/header.css';
 import './styles/homepage.css';
 import './styles/footer.css';
 import './styles/shoppingPage.css';
+import './styles/myCart.css';
 // import App from './App.jsx';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <HomePage />,
-  },
-
-  {
-    path: 'shop/:category',
-    element: <ShopPageWrapper />
-  }
-])
+const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartContextProvider>
+      <RouterProvider router={router} />
+    </CartContextProvider>
   </StrictMode>,
 )

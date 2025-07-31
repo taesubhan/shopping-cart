@@ -1,0 +1,5 @@
+:root {
+    --btn-base-color: oklch(44.8% 0.119 151.328);
+    --btn-hover-color: oklch(52.7% 0.154 150.069);
+    --btn-click-color: oklch(62.7% 0.194 149.214);
+}
