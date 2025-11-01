@@ -5,6 +5,8 @@ The app uses the **Fake Store API** for product data and manages global state th
 
 Link: https://shopping-cart-taesh.netlify.app/
 
+<img width="1786" height="916" alt="Screenshot from 2025-11-01 16-19-49" src="https://github.com/user-attachments/assets/91c801e1-633b-4f9d-aed2-edb6e82151d4" />
+
 ## Features
 
 - Dynamic Product Listing: Fetches live product data from the Fake Store API (https://fakestoreapi.com/)
